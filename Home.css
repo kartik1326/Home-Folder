@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('fonts/poppins_bold.woff2') format('woff2'),
+         url('fonts/poppins_bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Poppins Bold', sans-serif;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bg img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.taskbar {
+    position: fixed;
+    top: 10%;
+    left: 10%; /* Adjust the left property as needed */
+    width: 80%;
+    height: 75px;
+    background: linear-gradient(to right, rgba(255, 0, 221, 0.3), rgba(0, 247, 255, 0.3)); /* Gradient background */
+    display: flex;
+    flex-direction: row;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    transform: translate(0, -50%); /* Vertically center the taskbar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow with black color */
+}
+.taskbar img {
+    width: 65px;
+    margin: 5px;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity ease 250ms;
+}
+.taskbar img:hover {
+    width: 60px;
+    margin: 5px;
+    opacity: 70%;
+}
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+.taskbar a {
+    color: rgba(255, 255, 255,1);
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: opacity ease 250ms;
+}
+.taskbar a:hover{
+    color: rgba(255, 255, 255, 0.767);
+
+}
+.content {
+    display: flex;
+    width: 80%;
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 10%;
+    flex-direction: column;
+}
+.content-top,
+.content-bottom {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 30%; /* Adjust the width as needed */
+    margin: 15px; /* Adjust the margin as needed */
+
+}
+.image-section {
+    position: relative;
+    aspect-ratio:16/9 ;
+    width: 100%;
+    cursor: pointer;
+    opacity: 100%;
+    transition: ease 500ms;
+}
+.image-section:hover {
+    position: relative;
+    aspect-ratio:16/9 ;
+    opacity: 70%;
+    transform: scale(90%);
+    transition: ease 500ms;
+}
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    aspect-ratio:16/9 ;
+}
+h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: fit-content;
+    align-items: center;
+    align-self: center;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
