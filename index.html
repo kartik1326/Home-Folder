@@ -1,73 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MINIGEEMU</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="assets/images/icon.png" type="image/png">
-  <script src="script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <link href="src/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+  </style>
 </head>
 
-<body>
-  <div class="bg">
-    <img src="assets/images/bg.png" alt="background image">
-  </div>
-
-  <div class="taskbar">
-    <<img src="assets/images/logo.png" onclick="playintro()">
-      <div class="links">
-        <a href="aboutus.html">About us</a>
-        <a href=" "></a>
-        <a href=" "></a>
-        <a href=" "></a>
-        <a href=" "></a>
-      </div>
-  </div>
-  <div class="content">
-    <div class="content-top">
-      <div class="card">
-        <div class="image-section">
-          <a href="https://password-game-pi.vercel.app/"><img src="assets/images/img1.png" alt="Image 1"></a>
-
-          <h3>The Password Game</h3>
-        </div>
-      </div>
-      <div class="card">
-        <div class="image-section">
-          <a href="https://game-folder.vercel.app/"><img src="assets/images/img2.png" alt="Image 1"></a>
-          <h3>Guess The Country</h3>
-        </div>
-      </div>
-      <div class="card">
-        <div class="image-section">
-          <a href="https://pandaai.itch.io/dino-run"><img src="assets/images/img3.png" alt="Image 1"></a>
-          <h3>Dino Runner</h3>
-        </div>
-      </div>
+<body class="bg-white">
+  <div id="container" class="lg:max-w-screen-2xl md:max-w-lg sm:max-w-lg mt-10 align-middle justify-center w-full mx-auto">
+    <div id="haddings" class="w-full content-center my-4">
+      <h1 class="text-center text-6xl font-bold font-mono w-full my-4">Minigeemu</h1>
+      <h1 class="text-center text-sm font-medium font-mono w-full my-4">A Tiny Website for some tiny games</h1>
+    
     </div>
-    <div class="content-bottom">
-      <div class="card">
-        <div class="image-section">
-          <a href="https://rock-paper-scissor-henna-alpha.vercel.app/"><img src="assets/images/img4.png"
-              alt="Image 1"></a>
-          <h3>Rock Paper Scissors</h3>
-        </div>
+
+
+
+    <div id="cardContainer" class="justify-center grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6 mt-10 p-5 w-full ">
+      
+
+        <div id="card" class="align-middle justify-center border-red-50">
+          <a href="https://password-game-pi.vercel.app/">
+            <img class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img1.png" alt="image one">
+
+          </a>
       </div>
-      <div class="card">
-        <div class="image-section">
-          <a href="https://quiz-game-gamma-silk.vercel.app/"><img src="assets/images/img5.png" alt="Image 1"></a>
-          <h3>Tech Quiz</h3>
-        </div>
+        <div id="card" class="align-middle justify-center border-red-50">
+          <a href="https://game-folder.vercel.app/">
+            <img class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img2.png" alt="image one">
+
+          </a>
       </div>
+        <div id="card" class="align-middle justify-center border-red-50">
+          <a href="https://pandaai.itch.io/dino-run">
+            <img class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img3.png" alt="image one">
+
+          </a>
+      </div>
+        <div id="card" class="align-middle justify-center border-red-50">
+          <a href="https://rock-paper-scissor-henna-alpha.vercel.app/">
+            <img class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img4.png" alt="image one">
+
+          </a>
+      </div>
+        <div id="card" class="align-middle justify-center border-red-50">
+          <a href="https://quiz-game-gamma-silk.vercel.app/">
+            <img class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img5.png" alt="image one">
+
+          </a>
+      </div>
+        <div id="card" class="align-middle justify-center border-red-50">
+          <a href="https://pandaai.itch.io/runner">
+            <img class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img6.png" alt="image one">
+
+          </a>
+      </div>
+     
+
     </div>
+
   </div>
-
-
 </body>
 
 </html>
