@@ -22,6 +22,7 @@ you can just clone it and use as you wants maybe idea for your own projects(or y
   ![image](https://github.com/BlueEnd07/Minigeemu-home/assets/74140685/24b04caf-23aa-4140-be44-ffacf3ae47c2)
 
 ### 3.rock-paper-Scissors
+- This is the classic Rock Paper Scissor game , where you play with CPU. In this game you can select between different choices (Rock, Paper and Scissor) and the CPU selects the Random choices between the given options.
   ![image](https://github.com/BlueEnd07/Minigeemu-home/assets/74140685/82138921-4d27-4a97-b7fa-a99051246491)
 
 ### 4.guess the country
