@@ -1,69 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MINIGEEMU</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="icon.png" type="image/png">
-    <script src="script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+  </style>
 </head>
-<body>
-    <div class="bg">
-        <img src="bg.png" alt="">
+
+<body class="bg-white">
+  <div id="container"
+    class="lg:max-w-screen-2xl md:max-w-lg sm:max-w-lg mt-2 align-middle justify-center w-full mx-auto">
+    <div id="haddings" class="w-full content-center my-4">
+      <!-- <h1 class="text-center text-6xl font-bold font-mono w-full my-4">Minigeemu</h1> -->
+        <a class="w-1/2  my-1" href="index.html"><img class="mx-auto block lg:w-3/12 md:w-1/2 h-auto" src="assets/images/Minigeemu.webp" alt="Minigeemu"></a>
+      <h1 class="text-center text-lg font-medium font-mono w-full">A Tiny Website for some tiny games</h1>
+
     </div>
-    
-    <div class="taskbar">
-        <<img src="logo.png" onclick="playintro()">
-               <div class="links">
-            <a href="aboutus.html">About us</a>
-        <a href=" " ></a>
-        <a href=" "></a>
-        <a href=" "></a>
-        <a href=" "></a>
-        </div>
+
+
+
+    <div id="cardContainer"
+      class="justify-center grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6 mt-10 p-5 w-full ">
+
+
+      <div id="card" class="align-middle justify-center border-red-50">
+        <a href="https://password-game-pi.vercel.app/">
+          <img
+            class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img1.webp" alt="image one">
+
+        </a>
+      </div>
+      <div id="card" class="align-middle justify-center border-red-50">
+        <a href="https://game-folder.vercel.app/">
+          <img
+            class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img2.webp" alt="image one">
+
+        </a>
+      </div>
+      <div id="card" class="align-middle justify-center border-red-50">
+        <a href="https://pandaai.itch.io/dino-run">
+          <img
+            class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img3.webp" alt="image one">
+
+        </a>
+      </div>
+      <div id="card" class="align-middle justify-center border-red-50">
+        <a href="https://rock-paper-scissor-henna-alpha.vercel.app/">
+          <img
+            class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img4.webp" alt="image one">
+
+        </a>
+      </div>
+      <div id="card" class="align-middle justify-center border-red-50">
+        <a href="https://quiz-game-gamma-silk.vercel.app/">
+          <img
+            class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img5.webp" alt="image one">
+
+        </a>
+      </div>
+      <div id="card" class="align-middle justify-center border-red-50">
+        <a href="https://pandaai.itch.io/runner">
+          <img
+            class="rounded-xl w-full h-full aspect-video border-indigo-500/100 border-4 drop-shadow-md hover:scale-110 transition delay-100 duration-300 ease-in-out hover:border-slate-700 cursor-pointer"
+            src="assets/images/img6.webp" alt="image one">
+
+        </a>
+      </div>
+
+
     </div>
-    <div class="content">
-        <div class="content-top">
-            <div class="card">
-                <div class="image-section">
-                    <a href="https://password-game-pi.vercel.app/"><img src="images/img1.png" alt="Image 1" ></a>
-                    
-                    <h3>The Password Game</h3>
-                </div>
+    <div class="mt-28">
+      <footer>
+        <div id="madeby"
+          class="lg:max-w-screen-2xl md:max-w-lg sm:max-w-lg mb-0 align-middle justify-center w-full mx-auto pb-5">
+          <div id="contant">
+            <h1 class="text-center text-xl font-thin font-mono w-full my-4">Hi! it's us devlopers of Minigeemu.This is
+              where we make games and stuff for web </h1>
+          </div>
+          <div id="card2" class=" justify-center flex w-full gap-3 hover:scale-110 transition delay-100 duration-300 ease-in-out ">
+            <div id="github" class="border-2 border-black align-middle rounded-md p-2 bg-sky-200 text-center justify-center flex">
+              <a href="https://github.com/BlueEnd07" class="flex"><img class="h-6"
+                  src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="">
+                  Github
+                </a>
+                <!-- <h1 class="">Github</h1> -->
             </div>
-            <div class="card">
-                <div class="image-section">
-                    <a href="https://game-folder.vercel.app/"><img src="images/img2.png" alt="Image 1" ></a>
-                    <h3>Guess The Country</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image-section">
-                    <a href="https://pandaai.itch.io/dino-run"><img src="images/img3.png" alt="Image 1" ></a>
-                    <h3>Dino Runner</h3>
-                </div>
-            </div>
+          </div>
+          <div id="contant">
+            <h1 class="text-center text-lg font-thin font-mono w-full my-4">i dont know something goes in this place </h1>
+          </div>
+
         </div>
-        <div class="content-bottom">
-            <div class="card">
-                <div class="image-section">
-                    <a href="https://rock-paper-scissor-henna-alpha.vercel.app/"><img src="images/img4.png" alt="Image 1" ></a>
-                    <h3>Rock Paper Scissors</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="image-section">
-                    <a href="https://quiz-game-gamma-silk.vercel.app/"><img src="images/img5.png" alt="Image 1" ></a>
-                    <h3>Tech Quiz</h3>
-                </div>
-            </div>
-        </div>
+
     </div>
-    
-        
-     </body>
+    </footer>
+  </div>
+
+  </div>
+</body>
+
 </html>
